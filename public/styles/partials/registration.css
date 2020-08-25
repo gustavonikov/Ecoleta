@@ -1,0 +1,415 @@
+#registration-page {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+#registration-page header {
+    margin-top: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#registration-page header a {
+    color: var(--link-color);
+    
+    font-weight: bolder;
+
+    display: flex;
+    align-items: center;
+}
+
+#registration-page header a span {
+    background-image: url(../../images/arrow-left.svg);
+
+    display: flex;
+
+    width: 20px;
+    height: 23px;
+
+    margin-right: 16px;
+}
+
+form {
+    background-color: #faffff;
+
+    margin: 80px auto;
+    padding: 50px; /* 64px padrão */
+
+    border-radius: 8px;
+
+    max-width: 730px;
+}
+
+form h1 {
+    font-size: 36px;
+}
+
+form fieldset {
+    margin-top: 60px;
+
+    border: 0;
+}
+
+form legend {
+    margin-bottom: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+form legend h2 {
+    font-size: 24px;
+}
+
+form legend span {
+    font-size: 14px;
+
+    color: var(--title-color);
+
+}
+
+form .field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 20px;
+}
+
+form .field-group {
+    display: flex;
+}
+
+form .field-group .field + .field {
+    margin-left: 23px;
+}
+
+/* form  fieldset :nth-child(3) :nth-child(2) :last-child {
+    width: 150px;
+} */
+
+form label {
+   font-size: 14px;
+   
+   margin-bottom: 8px;
+}
+
+form input,
+form select {
+    background-color: var(--background-color);
+
+    border-width: thin;
+    border-radius: 8px;
+    border-color: #bab3e2;
+    border-style: solid;
+
+    padding: 16px 24px;
+    
+    font-size: 16px;
+
+    outline: none;
+
+    text-decoration: none;
+
+}
+
+form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; /* É isso que da as setas pra escolher pro select */
+}
+
+form button {
+    width: 240px;
+    height: 56px;
+
+    background-color: var(--primary-color);
+    color: var(--primary-white);
+
+    border: 0;
+    border-radius: 8px;
+
+    margin: 40px 194px 0;
+
+    font-weight: bold;
+    font-size: 16px;
+
+    transition: background-color .4s;
+
+    cursor: pointer;
+
+}
+
+form button:hover {
+    background-color: #2fb86e
+}
+
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 16px;
+}
+
+.items-grid li {
+    background-color: #f5f5f5;
+
+    list-style: none;
+
+    border: 2px solid #f5f5f5;
+    border-radius: 8px;
+
+    height: 160px;
+
+    padding: 32px 24px 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.items-grid li span {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+
+    color: var(--title-color);
+
+    margin-top: 10px;
+}
+
+.items-grid li.selected {
+    background: #e1f0ec;
+    border: 2px solid #34cb79;
+}
+
+.items-grid li img,
+.items-grid li span {
+    pointer-events: none;
+}
+
+@media (min-width: 1680px) {
+    #registration-page {
+        max-width: 1950px;
+    }
+
+    #registration-page header {
+        margin-top: 75px;
+    }
+
+    #registration-page header img {
+        height: 65px;
+    }
+
+    #registration-page header a {
+        font-size: 35px;
+    }
+
+    form {
+        max-width: 1250px;
+        margin: 160px auto 80px;
+    }
+
+    form fieldset {
+        margin-top: 100px
+    }
+
+    form h1 {
+        font-size: 50px;
+    }
+
+    form legend h2 {
+        font-size: 40px;
+    }
+
+    form label {
+        font-size: 30px;
+    }
+
+    form input,
+    form select {
+        padding: 25px 35px;
+
+        font-size: 27px;;
+    }
+
+    form legend span {
+        font-size: 30px;
+    }
+
+    
+    .items-grid li {
+        height: 250px;
+        padding: 42px 34px 26px;
+    }
+    
+    .items-grid li img {
+        height: 100px;
+    }
+    
+    .items-grid li span {
+        font-size: 30px;
+    }
+
+    form .button-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    form button {
+        width: 400px;
+        height: 115px;
+
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 700px) {
+    #registration-page {
+        width: 100%;
+
+        margin: 0;
+    }
+ 
+    #registration-page header {
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+
+    #registration-page header img {
+        height: 2rem;
+    }
+
+    #registration-page header a {
+        margin-top: 2.5rem;
+        font-size: 1rem;
+    }
+
+    #registration-page header a span {
+        width: 1.3rem;
+        height: 1.5rem;
+
+        margin-right: .6rem;
+    }
+    
+    form {
+        font-size: 1.2rem;
+        width: 90vw;
+
+        padding: .7rem;
+        margin: 3.5rem auto 1rem;
+    }
+    
+    form h1 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    
+    form fieldset {
+        margin-top: 3rem;
+    }
+    
+    form legend {
+        margin-bottom: 1.5rem;
+    }
+
+    form fieldset:last-of-type legend {
+        flex-direction: column;
+    }
+
+    form legend h2 {
+        font-size: 1.15rem;
+
+        margin-left: .1rem;
+    }
+    
+    form legend span {
+        font-size: 0.8rem;
+
+        margin-top: 1.5rem;
+    }
+    
+    form .field-group {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    form .field {
+        width: 100%;
+
+        margin-bottom: 1.6rem;
+        padding: 0 .2rem;
+    }
+
+    form .field-group .field + .field {
+        margin-left: 0;
+    }
+    /* form  fieldset :nth-child(3) :nth-child(2) :last-child {
+        width: 150px;
+    } */
+    
+    form label {
+        font-size: .95rem;
+        text-align: initial;
+
+        margin-bottom: .4rem;
+    }
+    
+    form input,
+    form select {
+        padding: .5rem .85rem;
+    }
+    
+    
+    form button {
+        width: 9rem;
+        height: 3rem;
+
+        margin: 1.5rem auto;
+
+        font-size: 0.9rem;
+    }
+
+    form .button-wrapper {
+        display: flex;
+    }
+
+    .items-grid {
+        gap: .3rem;
+    }
+    
+    .items-grid li {
+        height: 5rem;
+
+        padding: .2rem .1rem;
+    }
+    
+    .items-grid li span {
+        font-size: .7rem;
+    
+        margin-top: 0;
+    }
+    .items-grid li img {
+        height: 1.5rem;
+
+        margin-top: .5rem;
+    }
+    .items-grid li img,
+    .items-grid li span {
+        pointer-events: none;
+    }
+
+}

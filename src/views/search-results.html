@@ -1,0 +1,44 @@
+{% extends 'components/layout.html' %}
+
+{% set pageId = 'search-results-page' %}
+
+    {% block title %}
+        <title>Ecoleta - Resultados dos pontos de coleta</title>
+    {% endblock title %}
+    
+    {% block styles %}
+        <link rel="stylesheet" href="/styles/partials/search-results.css">
+    {% endblock styles %}
+    
+    {% block content %}
+            {% include 'components/header.html' %}
+            
+            <main>
+
+                {% if total > 0 %}
+                    <h4><strong>{{ total }} ponto(s)</strong> encontrado(s)</h4>
+                {% else %}
+                    <h3>Não foi possível encontrar <strong>nenhum</strong> ponto de coleta para <span>{{search}}</span>.</h3>
+                {% endif %}
+
+                <div class="cards">
+
+                    {% for place in places %}
+
+                        <div class="card">
+                            <img src="{{ place.image }}" alt="{{ place.name }}">
+                            <h1>{{ place.name }}</h1>
+                            <h3>{{ place.items }}</h3>
+                            <p>
+                                {{ place.city }}, {{ place.state }} <br>
+                                {{ place.address }} {{ place.address2 }}
+                            </p>
+                        </div>
+
+                    {% endfor %}
+
+                </div>
+            </main>
+    {% endblock content %}
+
+        

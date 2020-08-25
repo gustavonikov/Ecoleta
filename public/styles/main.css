@@ -1,0 +1,32 @@
+:root {
+    --title-color: #322153;
+    --primary-color: #34cb79;
+    --link-color:#9400D3;
+    --background-color: #f0f0f5;
+    --primary-white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background: var(--background-color);
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--title-color);
+
+    font-family: Ubuntu, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
