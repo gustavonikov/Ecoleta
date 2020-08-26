@@ -10,7 +10,7 @@ body::after {
     right: 0;
     left: 0;
     bottom: 0;
-    height: 17.5rem;
+    height: 20.5rem; /* 17.5 */
     z-index: -1;
 }
 
@@ -58,7 +58,7 @@ main h4 {
     font-weight: normal;
     font-family: Roboto, sans-serif;
 
-    margin-bottom: 32px;
+    margin: 90px 0 40px;
 }
 
 main h3 {
