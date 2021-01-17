@@ -215,11 +215,11 @@ form button:hover {
     }
 
     #registration-page header a {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     form {
-        max-width: 1250px;
+        max-width: 1150px;
         margin: 160px auto 80px;
     }
 
@@ -228,26 +228,26 @@ form button:hover {
     }
 
     form h1 {
-        font-size: 50px;
+        font-size: 45px;
     }
 
     form legend h2 {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     form label {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     form input,
     form select {
-        padding: 25px 35px;
+        padding: 20px 30px;
 
-        font-size: 27px;;
+        font-size: 25px;;
     }
 
     form legend span {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     
@@ -270,10 +270,10 @@ form button:hover {
     }
 
     form button {
-        width: 400px;
-        height: 115px;
+        width: 300px;
+        height: 100px;
 
-        font-size: 35px;
+        font-size: 30px;
     }
 }
 
