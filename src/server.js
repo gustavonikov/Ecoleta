@@ -17,4 +17,4 @@ server
     .get('/registration', pageRegistration)
     .post('/save-registration', pageSaveRegistration)
     .get('/search-results', pageSearchResults)
-    .listen(3500);
+    .listen(3500, (() => console.log('Server running on PORT: 3500')));
